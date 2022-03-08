@@ -24,5 +24,5 @@ def detect_logos(path):
                 response.error.message))
 
 if __name__ == "__main__":
-    path = r'C:\Users\Akshat Sharma\Desktop\IMG_0592.jpg'
+    path = r"C:\Users\Akshat Sharma\Desktop\WhatsApp Image 2022-03-08 at 5.28.39 PM.jpeg"
     detect_logos(path)

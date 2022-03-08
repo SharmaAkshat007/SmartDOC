@@ -19,12 +19,7 @@ def detect_faces(path):
     print(vertices)
 
     top_left = vertices[0]
-
-    top_right = vertices[1]
-
     bottom_right = vertices[2]
-    
-    bottom_left = vertices[3]
 
     image = Image.open(path)
 
@@ -39,6 +34,9 @@ def detect_faces(path):
             'https://cloud.google.com/apis/design/errors'.format(
                 response.error.message))
 
+
+    return cropped_image
+
 if __name__ == "__main__":
-    path = r"C:\Users\Akshat Sharma\Desktop\IMG_0592.jpg"
+    path = r"C:\Users\Akshat Sharma\Desktop\WhatsApp Image 2022-03-08 at 12.03.49 AM.jpeg"
     detect_faces(path)
