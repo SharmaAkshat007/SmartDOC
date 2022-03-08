@@ -11,16 +11,20 @@ def detect_text(path):
 
     response = client.text_detection(image=image)
     texts = response.text_annotations
-    print('Texts:')
-    print(type(texts))
-    for text in texts:
-        print('\n"{}"'.format(text.description))
+    
+    infomation = texts[0].description.split("\n")
 
-        vertices = (['({},{})'.format(vertex.x, vertex.y)
-                    for vertex in text.bounding_poly.vertices])
+    aadhar_number = int()
 
-        print('bounds: {}'.format(','.join(vertices)))
+    for info in infomation:
+        ws = info.split(" ")
+        ws = ''.join(ws)
+        if ws.isnumeric() and len(ws) == 12:
+            aadhar_number = int(ws)
 
+    print(aadhar_number)
+    print(type(aadhar_number))
+    
     if response.error.message:
         raise Exception(
             '{}\nFor more info on error messages, check: '
@@ -28,4 +32,5 @@ def detect_text(path):
                 response.error.message))
 
 if __name__ == "__main__":
-    detect_text("D:\Akshat\Project\log4j\Test_images\Thapar_ID.jpg")
+    path = r"C:\Users\Akshat Sharma\Desktop\IMG_0592.jpg"
+    detect_text(path)
