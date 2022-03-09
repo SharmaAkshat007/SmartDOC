@@ -62,7 +62,4 @@ def detect_faces(path):
 
 
     return cropped_images
-
-if __name__ == "__main__":
-    path = r"/home/shikhar/Downloads/temp/WhatsApp Image 2022-03-08 at 5.06.56 PM.jpeg"
-    detect_faces(path)
+    
