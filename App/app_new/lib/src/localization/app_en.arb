@@ -1,0 +1,6 @@
+{
+  "appTitle": "rush",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
