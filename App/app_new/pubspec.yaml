@@ -1,0 +1,43 @@
+name: app_new
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_localizations:
+    sdk: flutter
+  firebase_auth: ^3.3.9
+  firebase_core: ^1.13.1
+  equatable: ^2.0.3
+  flutter_bloc: ^8.0.1
+  google_sign_in: ^5.2.4
+  connectivity_plus: ^2.2.1
+  http: ^0.13.4
+  google_fonts: ^2.3.1
+  font_awesome_flutter: ^9.2.0
+  image_picker: ^0.8.4+10
+  dotted_border: ^2.0.0+2
+  liquid_progress_indicator: ^0.4.0
+  percent_indicator: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/
+    - assets/2.0x/
+    - assets/3.0x/
