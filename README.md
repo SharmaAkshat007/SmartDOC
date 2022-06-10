@@ -1,1 +1,1 @@
-### SIH Document Quality Estimation
+### Document Quality Estimation
